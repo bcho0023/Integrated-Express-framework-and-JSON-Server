@@ -1,0 +1,136 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "givenName": "Brian",
+      "familyName": "Choo",
+      "userName": "bcho",
+      "phoneNumber": "0413978493",
+      "isCustomer": true,
+      "isReceptionist": true,
+      "isHealthcareWorker": true,
+      "additionalInfo": {
+        "employedSite": "",
+        "notifications": []
+      }
+    },
+    {
+      "id": "2",
+      "givenName": "Megan",
+      "familyName": "Tiong",
+      "userName": "mg",
+      "phoneNumber": "0413978493",
+      "isCustomer": true,
+      "isReceptionist": false,
+      "isHealthcareWorker": false,
+      "additionalInfo": {
+        "employedSite": "",
+        "notifications": []
+      }
+    }
+  ],
+  "sites": [
+    {
+      "id": "1",
+      "name": "Clayton COVID Test",
+      "description": "Clayton test",
+      "websiteUrl": "https://recovery.serviceconnect.gov.au/service/vic/3168/clayton/drive-through+%26+walk-in+covid-19+testing+clinic/3801678678",
+      "phoneNumber": "0413978493",
+      "address": {
+        "latitude": "Test latitude",
+        "longitude": "Test longitude",
+        "unitNumber": "test unitNumber",
+        "street": "test street",
+        "street2": "test street2",
+        "suburb": "test suburb",
+        "state": "test state",
+        "postcode": "test postcode",
+        "additionalInfo": {}
+      },
+      "additionalInfo": {
+        "category": "Clinic",
+        "types": [
+          "DRIVETHROUGH",
+          "WALKIN"
+        ],
+        "operatingHours": {
+          "MONDAY": {
+            "openingHour": "09:30",
+            "closingHour": "20:30"
+          },
+          "TUESDAY": {
+            "openingHour": "09:30",
+            "closingHour": "20:30"
+          },
+          "WEDNESDAY": {
+            "openingHour": "09:30",
+            "closingHour": "20:30"
+          },
+          "THURSDAY": {
+            "openingHour": "09:30",
+            "closingHour": "20:30"
+          },
+          "FRIDAY": {
+            "openingHour": "09:30",
+            "closingHour": "20:30"
+          },
+          "SATURDAY": {
+            "openingHour": "09:30",
+            "closingHour": "20:30"
+          },
+          "SUNDAY": {
+            "openingHour": "09:30",
+            "closingHour": "20:30"
+          }
+        }
+      }
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "customerId": "2",
+      "siteId": "1",
+      "startTime": "2022-03-24T10:06:20.385Z",
+      "smsPin": "123",
+      "status": "INITIATED",
+      "notes": "tester",
+      "additionalInfo": {
+        "qrCode": "",
+        "conferenceUrl": "",
+        "symptoms": [],
+        "modifications": []
+      }
+    },
+    {
+      "customerId": "2",
+      "siteId": "1",
+      "smsPin": "0382",
+      "status": "INITIATED",
+      "notes": "tester",
+      "additionalInfo": {
+        "qrCode": "",
+        "conferenceUrl": "",
+        "symptoms": [],
+        "modifications": []
+      },
+      "startTime": "2022-05-12T20:17:00.000Z",
+      "createdAt": "2024-05-31T08:49:26.018Z",
+      "updatedAt": "2024-05-31T08:49:26.018Z",
+      "id": 4
+    }
+  ],
+  "tests": [
+    {
+      "id": "1",
+      "type": "RAT",
+      "patientId": "2",
+      "administererId": "1",
+      "bookingId": "1",
+      "result": "PENDING",
+      "status": "CREATED",
+      "notes": "covid test tester",
+      "additionalInfo": {}
+    }
+  ]
+}
